@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(background.JPG);
+    background-repeat: no-repeat;
+    background-size: 1600px 1000px;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .logo {
+    width: 150px;
+    height: 150px;
+    margin: 3% 10%;
+    background-color: none;
+  }
+  
+  header {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 100%;
+  }
+  
+  main {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+  }
+  
+  nav > a {
+    margin: 2% 1%;
+    height: 12%;
+    width: 15%;
+    color: darkslategray;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 21px;
+    border-radius: 25px;
+    background: lightgreen;
+    padding: 20px; 
+    text-align: center;
+    border: 1px solid white;
+  }
+  
+  .has-border {
+    background: lightgray;
+    padding: 10px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 2%;
+  }
+  
+  #profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 15% auto;
+    grid-column: 2/3;
+  }
+  
+  h1 {
+    color: darkgreen;
+    grid-column: 2/3;
+    margin: 3% auto;
+    border-bottom: 2px solid darkgreen;;
+  }
+  
+  h2 {
+    grid-column: 2/3;
+    margin: 3% auto;
+    font-style: bold;
+  }
+  
+  .small-text {
+    grid-column: 2/3;
+    color: darkslategray;
+    font-size: 10px;
+    margin: 3% auto;
+  }
+  
+  button {
+    grid-column: 2/3;
+    margin: 3% auto;
+    width: 70%;
+    height: 15%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    border-radius: 25px;
+    background: lightgray;
+    padding: 20px; 
+    padding-bottom: 5%;
+    text-align: center;
+    color: darkslategray;
+    letter-spacing: 10px;
+    font-style: bold;
+  }

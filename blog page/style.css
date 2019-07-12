@@ -1,0 +1,25 @@
+body {
+    background-color: #aaa;
+}
+
+#container {
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    border: green 5px ridge;
+    border-radius: 5px;
+}
+
+article {
+    border-bottom: green 2px ridge;
+}
+
+#specialbox {
+    border: none;
+}
+

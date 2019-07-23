@@ -154,14 +154,16 @@ body {
       font-size: 25px;
       font-family: "Trebuchet MS", Helvetica, sans-serif;
       color: orangered;
-      text-align: right;
+      text-align: center;
+      margin-bottom: 5px;
       border-bottom: 1px ridge darkmagenta;
     }
     h2 {
       font-size: 20px;
       font-family: "Trebuchet MS", Helvetica, sans-serif;
       color: darkorange;
-      text-align: right;
+      text-align: center;
+      margin-top: 2px;
     }
     button {
       background: pink;
@@ -214,6 +216,8 @@ body {
       font-family: "Trebuchet MS", Helvetica, sans-serif;
       color: red;
       text-align: left;
+      margin-top: 1px;
+      margin-bottom: 1px;
     }
     button {
       background: lightyellow;
@@ -233,21 +237,13 @@ body {
       padding-top: 1px;
       grid-column: 2/3;
     }
-    nav {
-      margin: 0;
-      padding-left: 20px;
-      display: flex;
-      justify-content: center;
-      list-style: none;
-    }
     nav > a {
       height: 20%;
       width: 20%;
       color: black;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-size: 15px;
+      font-size: 20px;
       border-radius: 20px;
-      box-sizing: border-box;
     }
     .logo {
       width: 175px;
@@ -274,16 +270,29 @@ body {
     h2 {
       color: lightblue;
     }
+    main {
+      height: 480px;
+    }
     #profile-pic {
       width: 325px;
       height: 325px;
     }
     .logo {
+      padding-top: 0px; 
+      padding-left: 1px;
       width: 175px;
       height: 175px;
     }
+    nav {
+      margin: 0;
+      padding-left: 20px;
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
     nav > a {
-      font-size: 20px;
+      font-size: 19px;
+      box-sizing: border-box;
     }
     button {
       background:lightblue;
@@ -302,6 +311,7 @@ body {
       background-color: lightpink;
     }
     .logo {
+      padding-top: 0px;
       width: 200px;
       height: 200px;
     }
@@ -313,9 +323,9 @@ body {
     h2 {
       color: orangered;
       font-size: 25px;
-      margin-top: 1px;
     }
     #profile-pic {
+      padding-top: 0px;
       width: 350px;
       height: 350px;
     }
@@ -324,12 +334,12 @@ body {
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       letter-spacing: 14px;
       font-size: 24px;
-      padding: 20px;
+      padding: 15px;
       padding-bottom: 10%;
       margin-bottom: 1%;
       color:black;
     }
     nav > a {
-      font-size: 22px;
+      font-size: 20px;
     }
   }

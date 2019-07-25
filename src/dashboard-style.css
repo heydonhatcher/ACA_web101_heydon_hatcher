@@ -1,0 +1,121 @@
+.container {
+    display: grid;
+    height: 900px;
+    width: 1100px;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 15% 42.5% 42.5%;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    justify-items: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: Garamond, Baskerville, "Baskerville Old Face";
+    font-size: 50px;
+    padding: 10px;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    justify-content: center;
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+    color: white;
+}
+
+.date {
+    font-family: Garamond, Baskerville, "Baskerville Old Face";
+    font-size: 30px;
+    grid-column: 2 / 2;
+    grid-row: 1 / 3;
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+
+.time {
+    font-size: 50px;
+    display: grid;
+    height: 63px;
+    width: 275px;
+    text-shadow:1px 1px 2px black,0 0 0.2em blue;
+    grid-template-columns: 75px;
+    grid-template-rows: 75px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background: lightslategray;
+    color: lightblue;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding-left: 30px;
+}
+
+.toDo {
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+    font-family: Georgia, serif;
+    color: white;
+    text-shadow: blueviolet 1px 0 10px;
+    font-size: 25px;
+}
+
+.items {
+    display: grid;
+    height: 50px;
+    width: 475px;
+    border-bottom: 3px solid black;
+    box-sizing: border-box;
+}
+
+.calculator {
+    max-width: 300px;
+    max-height: 500px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+    background: darkslateblue;
+}
+
+.calculator input {
+    background: white;
+    border: none;
+    box-shadow: none;
+    width: 86%;
+    border-bottom: 2px solid lightslategray;
+    padding: 20px;
+    text-align: right;
+    align-items: center;
+    font-size: 30px;
+}
+
+.calculator-buttons {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+
+}
+
+.calc-button {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1 px solid black;
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.is-clear, .is-zero {
+    grid-column: span 3;
+}
+
+.is-clear {
+    background: #3572D8;
+}
+
+.is-equals {
+    background: #28D060;
+}
+
+

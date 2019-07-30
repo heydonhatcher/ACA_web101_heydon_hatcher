@@ -117,11 +117,11 @@ h1 {
 @media (max-width: 768px) {
     .container {
         display: grid;
-        height: 650px;
+        height: 675px;
         width: 300px;
         grid-template-columns: 1fr;
         grid-template-rows: 15% 28.3% 28.3% 28.3%;
-        grid-row-gap: 10px;
+        grid-row-gap: 5px;
     }
     h1 {
         grid-row: 1;
@@ -141,13 +141,13 @@ h1 {
         margin-bottom: 40px;
     }
     .toDo {
-        grid-row: 2.5;
-        font-size: 20px;
+        grid-row: 2;
+        font-size: 18px;
         margin-left: 20px;
-        text-align: center;
+        padding-top: 20%;
     }
     .items {
-        height: 50px;
+        height: 35px;
         width: 375px;
     }
     .calculator {
@@ -198,6 +198,7 @@ h1 {
         font-size: 23px;
         margin-left: 10px;
         text-align: left;
+        margin-top: 175px;
     }
     .items {
         height: 40px;

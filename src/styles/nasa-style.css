@@ -1,0 +1,77 @@
+body {
+  margin: 0 auto;
+  width: 850px;
+}
+
+header {
+  background-image: url(../images/space.jpg);
+  height: 450px;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 100px;
+  font-family: "Darker Grotesque", sans-serif;
+  color: white;
+  margin-block-start: 0;
+  text-align: center;
+  padding: 150px;
+}
+
+.flexcontainer {
+  display: flex;
+  height: 324px;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Darker Grotesque", sans-serif;
+}
+
+section {
+  background: #e6e6e6;
+  margin-top: 10px;
+}
+
+article {
+  width: 270px;
+  height: 324px;
+  background: #e6e6e6;
+  font-size: 25px;
+  padding-top: 20px;
+  padding-left: 35px;
+  margin: 5 20px;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 18px;
+  margin-left: -35px;
+}
+
+.submit {
+  background-color: #4d4d4d;
+  border: none;
+  color: white;
+  padding: 16px 23px;
+  margin: 2px 2px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.one {
+  width: 90%;
+  padding: 8px;
+  margin-top: 1px;
+  box-sizing: border-box;
+}
+
+.two {
+  width: 90%;
+  padding: 35px;
+  margin-top: 1px;
+  box-sizing: border-box;
+}
+
+form {
+  font-size: 18px;
+  padding-top: 10px;
+}

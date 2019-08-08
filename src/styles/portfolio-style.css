@@ -1,0 +1,81 @@
+header {
+  font-family: "Comfortaa", cursive;
+  font-size: 50px;
+  margin: 50px;
+  text-align: center;
+}
+
+h2 {
+  color: darkslategrey;
+  font-family: "Comfortaa", cursive;
+  text-align: center;
+  border-bottom: solid darkslategray 1px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-stretch: ultra-expanded;
+}
+
+body {
+  background: lightgrey;
+}
+
+iframe {
+  display: inline-block;
+  height: 400px;
+  width: 400px;
+  margin: 25px;
+}
+
+span {
+  text-decoration: none;
+  color: darkslategrey;
+  font-family: "Comfortaa", cursive;
+  font-size: 25px;
+}
+
+video {
+  padding: 30px;
+}
+
+form {
+  font-family: "Comfortaa", cursive;
+  padding: 20px;
+}
+
+input {
+  font-family: "Comfortaa", cursive;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 30px;
+  padding: 5px;
+  width: 200px;
+  border: 2px solid black;
+}
+
+#location {
+  padding: 100px;
+}
+
+#reset {
+  width: 75px;
+  margin-left: 2px;
+}
+
+#submit {
+  width: 75px;
+  margin-left: 30px;
+  margin-right: 5px;
+}
+
+@media (max-width: 576px) {
+  body {
+    background: darkgray;
+    margin: 50px;
+  }
+
+  iframe {
+    display: flex;
+    align-items: center;
+  }
+}

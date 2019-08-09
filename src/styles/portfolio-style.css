@@ -34,7 +34,8 @@ span {
 }
 
 video {
-  padding: 30px;
+  margin: 25px;
+  background: black;
 }
 
 form {

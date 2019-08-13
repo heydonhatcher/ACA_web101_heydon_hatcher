@@ -1,0 +1,38 @@
+img {
+  width: 350px;
+  height: 400px;
+  margin-left: 200px;
+}
+
+.doggie {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  font-family: "Marcellus", serif;
+  letter-spacing: 5px;
+  color: darkblue;
+  text-align: center;
+}
+
+body {
+  font-family: "Marcellus", serif;
+  color: darkblue;
+  background: lightblue;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.intro {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}

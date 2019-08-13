@@ -1,0 +1,131 @@
+.transbox {
+  margin: 20px;
+  height: 400px;
+  background-color: black;
+  border: 1px solid lightgray;
+  opacity: 0.8;
+  background: url(../images/aboutMe.jpg) no-repeat 100%;
+  color: black;
+}
+
+h1,
+h2 {
+  background: darkorange;
+  color: black;
+  width: 400px;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h1 {
+  margin-top: 165px;
+}
+h2 {
+  margin-top: 20px;
+}
+
+.description {
+  border: 1px solid black;
+  width: 95%;
+  height: 400px;
+  font-family: "Lexend Deca", sans-serif;
+  text-align: center;
+  background: lightyellow;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-left: 15px;
+  padding: 11px;
+}
+
+.container {
+  display: flex;
+}
+
+.merit,
+.work {
+  border: 1px solid black;
+  background: lightcoral;
+  color: black;
+  width: 50%;
+  height: 125px;
+  margin-left: 15px;
+  margin-right: 20px;
+  margin-top: 10px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 35px;
+  text-align: center;
+  padding-top: 55px;
+}
+
+body {
+  background: lightgray;
+}
+
+.lastcon {
+  display: flex;
+  width: 100%;
+  margin: 10px;
+}
+
+.strive {
+  border: 1px solid black;
+  background: lightseagreen;
+  color: black;
+  width: 25%;
+  height: 500px;
+  margin-left: 15px;
+  margin-right: 20px;
+  margin-top: 10px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 22px;
+  text-align: left;
+  padding-top: 25px;
+  padding-left: 15px;
+}
+
+.mom {
+  width: 70%;
+  height: 525px;
+  padding-right: 30px;
+  padding-top: 10px;
+}
+
+@media (max-width: 576px) {
+  .description {
+    font-size: 13px;
+    padding: 8px;
+    margin-left: 5px;
+    height: 275px;
+  }
+
+  .container {
+    flex-flow: column;
+  }
+
+  .merit,
+  .work {
+    color: black;
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 25px;
+    font-size: 30px;
+    height: 75px;
+    padding-top: 25px;
+  }
+
+  .lastcon {
+    flex-flow: column;
+  }
+
+  .strive {
+    width: 95%;
+    height: 375px;
+    margin-left: 1px;
+    font-size: 18px;
+  }
+
+  .mom {
+    width: 100%;
+    height: 300px;
+  }
+}

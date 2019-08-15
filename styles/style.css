@@ -1,345 +1,366 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    /* background-image: url(background.jpg); */
-    background-repeat: no-repeat;
-    background-size: 1600px 1000px;
-    width: 100vw;
-    height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-image: url(background.jpg); */
+  background-repeat: no-repeat;
+  background-size: 1600px 1000px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  margin: 3% 10%;
+  background-color: none;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  width: 100%;
+}
+
+main {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+}
+
+nav > a {
+  margin: 2% 1%;
+  height: 12%;
+  width: 15%;
+  color: darkslategray;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 19px;
+  border-radius: 25px;
+  background: lightgreen;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid white;
+}
+
+.has-border {
+  background: lightgray;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 2%;
+}
+
+#profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 15% auto;
+  grid-column: 2/3;
+}
+
+h1 {
+  color: darkgreen;
+  grid-column: 2/3;
+  margin: 3% auto;
+  border-bottom: 2px solid darkgreen;
+}
+
+h2 {
+  grid-column: 2/3;
+  margin: 3% auto;
+  font-style: bold;
+}
+
+.small-text {
+  grid-column: 2/3;
+  color: darkslategray;
+  font-size: 10px;
+  margin: 3% auto;
+}
+
+button {
+  grid-column: 2/3;
+  margin: 3% auto;
+  width: 70%;
+  height: 15%;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  border-radius: 25px;
+  background: lightgray;
+  padding: 20px;
+  padding-bottom: 5%;
+  text-align: center;
+  color: darkslategray;
+  letter-spacing: 10px;
+  font-style: bold;
+}
+
+.fiz {
+  width: 100px;
+  height: 100px;
+  animation-name: fiz;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-delay: 5s;
+}
+
+@keyframes fiz {
+  from {
+    margin-left: 100%;
+    width: 100%;
   }
-  
+
+  to {
+    margin-left: -10%;
+    width: 0%;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    background-color: lightgreen;
+  }
+  h1 {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    border-bottom: 1px dotted lightseagreen;
+  }
+  h2 {
+    font-size: 21px;
+    color: grey;
+    text-align: center;
+  }
+  button {
+    background: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-size: 18px;
+    padding: 15px;
+    padding-bottom: 15%;
+  }
+  #profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 25%;
+    margin: 5%;
+    grid-column: 2/3;
+  }
+  nav > a {
+    display: block;
+    height: 13%;
+    width: 15%;
+    color: darkslategray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border-radius: 25px;
+  }
+  nav {
+    display: block;
+    padding-left: 70%;
+  }
+  .logo {
+    width: 130px;
+    height: 130px;
+    padding-left: 85%;
+    padding-top: 15%;
+  }
+}
+
+@media (min-width: 576px) {
+  h1 {
+    font-size: 25px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: orangered;
+    text-align: center;
+    margin-bottom: 5px;
+    border-bottom: 1px ridge darkmagenta;
+  }
+  h2 {
+    font-size: 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: darkorange;
+    text-align: center;
+    margin-top: 2px;
+  }
+  button {
+    background: pink;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    letter-spacing: 4px;
+    font-size: 25px;
+    padding: 20px;
+    padding-bottom: 12%;
+    color: black;
+  }
+  #profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+    margin: 10%;
+  }
+  nav > a {
+    display: block;
+    height: 17%;
+    width: 20%;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 18px;
+    border-radius: 25px;
+  }
+  nav {
+    display: block;
+    padding-left: 65%;
+  }
   .logo {
     width: 150px;
     height: 150px;
-    margin: 3% 10%;
-    background-color: none;
+    padding-top: 15%;
   }
-  
-  header {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    width: 100%;
+  body {
+    background-color: lightblue;
   }
-  
-  main {
-    height: auto;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 30px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: darkred;
+    text-align: left;
+    border-bottom: 1px ridge red;
   }
-  
-  nav > a {
-    margin: 2% 1%;
-    height: 12%;
-    width: 15%;
+  h2 {
+    font-size: 22px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: red;
+    text-align: left;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  button {
+    background: lightyellow;
+    font-family: "Courier New", Courier, monospace;
+    letter-spacing: 6px;
+    font-size: 20px;
+    padding: 20px;
+    padding-bottom: 10%;
+    margin-bottom: 1%;
     color: darkslategray;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 19px;
-    border-radius: 25px;
-    background: lightgreen;
-    padding: 20px; 
-    text-align: center;
-    border: 1px solid white;
   }
-  
-  .has-border {
-    background: lightgray;
-    padding: 10px;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    padding-right: 2%;
-  }
-  
   #profile-pic {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    margin: 15% auto;
+    margin: auto;
+    padding-top: 1px;
     grid-column: 2/3;
   }
-  
-  h1 {
-    color: darkgreen;
-    grid-column: 2/3;
-    margin: 3% auto;
-    border-bottom: 2px solid darkgreen;;
-  }
-  
-  h2 {
-    grid-column: 2/3;
-    margin: 3% auto;
-    font-style: bold;
-  }
-  
-  .small-text {
-    grid-column: 2/3;
-    color: darkslategray;
-    font-size: 10px;
-    margin: 3% auto;
-  }
-  
-  button {
-    grid-column: 2/3;
-    margin: 3% auto;
-    width: 70%;
-    height: 15%;
-    font-family: 'Courier New', Courier, monospace;
+  nav > a {
+    height: 20%;
+    width: 20%;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     font-size: 20px;
-    border-radius: 25px;
-    background: lightgray;
-    padding: 20px; 
-    padding-bottom: 5%;
-    text-align: center;
-    color: darkslategray;
-    letter-spacing: 10px;
-    font-style: bold;
+    border-radius: 20px;
   }
+  .logo {
+    width: 175px;
+    height: 175px;
+    padding-top: 5%;
+    padding-left: 10%;
+  }
+  .small-text {
+    margin-top: 0.5px;
+  }
+  body {
+    background-color: violet;
+  }
+}
 
-  @media (max-width: 576px) {
-    body {
-      background-color: lightgreen
-    }
-    h1 {
-      font-size: 22px;
-      color: white;
-      text-align: center;
-      border-bottom: 1px dotted lightseagreen;
-    }
-    h2 {
-      font-size: 21px;
-      color: grey;
-      text-align: center;
-    }
-    button {
-      background: yellow;
-      font-family: Arial, Helvetica, sans-serif;
-      letter-spacing: 2px;
-      font-size: 18px;
-      padding: 15px;
-      padding-bottom: 15%;
-    }
-    #profile-pic {
-      width: 200px;
-      height: 200px;
-      border-radius: 25%;
-      margin: 5%;
-      grid-column: 2/3;
-    }
-    nav > a {
-      display: block;
-      height: 13%;
-      width: 15%;
-      color: darkslategray;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 12px;
-      border-radius: 25px;
-    }
-    nav {
-      display: block;
-      padding-left: 70%;
-    }
-    .logo {
-      width: 130px;
-      height: 130px;
-      padding-left: 85%;
-      padding-top: 15%;
-    }
+@media (min-width: 992px) {
+  body {
+    background-color: lightseagreen;
   }
-  
-  @media (min-width: 576px) {
-    h1 {
-      font-size: 25px;
-      font-family: "Trebuchet MS", Helvetica, sans-serif;
-      color: orangered;
-      text-align: center;
-      margin-bottom: 5px;
-      border-bottom: 1px ridge darkmagenta;
-    }
-    h2 {
-      font-size: 20px;
-      font-family: "Trebuchet MS", Helvetica, sans-serif;
-      color: darkorange;
-      text-align: center;
-      margin-top: 2px;
-    }
-    button {
-      background: pink;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      letter-spacing: 4px;
-      font-size: 25px;
-      padding: 20px;
-      padding-bottom: 12%;
-      color: black;
-    }
-    #profile-pic {
-      width: 200px;
-      height: 200px;
-      border-radius: 30%;
-      margin: 10%;
-    }
-    nav > a {
-      display: block;
-      height: 17%;
-      width: 20%;
-      color: black;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-size: 18px;
-      border-radius: 25px;
-    }
-    nav {
-      display: block;
-      padding-left: 65%;
-    }
-    .logo {
-      width: 150px;
-      height: 150px;
-      padding-top: 15%;
-    }
-    body {
-      background-color: lightblue;
-    }
+  h1 {
+    color: darkslateblue;
+    border-bottom: 2px solid darkblue;
   }
+  h2 {
+    color: lightblue;
+  }
+  main {
+    height: 480px;
+  }
+  #profile-pic {
+    width: 325px;
+    height: 325px;
+  }
+  .logo {
+    padding-top: 0px;
+    padding-left: 1px;
+    width: 175px;
+    height: 175px;
+  }
+  nav {
+    margin: 0;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  nav > a {
+    font-size: 19px;
+    box-sizing: border-box;
+  }
+  button {
+    background: lightblue;
+    font-family: "Courier New", Courier, monospace;
+    letter-spacing: 14px;
+    font-size: 22px;
+    padding: 20px;
+    padding-bottom: 10%;
+    margin-bottom: 1%;
+    color: black;
+  }
+}
 
-  @media (min-width: 768px) {
-    h1 {
-      font-size: 30px;
-      font-family: "Trebuchet MS", Helvetica, sans-serif;
-      color: darkred;
-      text-align: left;
-      border-bottom: 1px ridge red;
-    }
-    h2 {
-      font-size: 22px;
-      font-family: "Trebuchet MS", Helvetica, sans-serif;
-      color: red;
-      text-align: left;
-      margin-top: 1px;
-      margin-bottom: 1px;
-    }
-    button {
-      background: lightyellow;
-      font-family: 'Courier New', Courier, monospace;
-      letter-spacing: 6px;
-      font-size: 20px;
-      padding: 20px;
-      padding-bottom: 10%;
-      margin-bottom: 1%;
-      color:darkslategray;
-    }
-    #profile-pic {
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
-      margin: auto;
-      padding-top: 1px;
-      grid-column: 2/3;
-    }
-    nav > a {
-      height: 20%;
-      width: 20%;
-      color: black;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-size: 20px;
-      border-radius: 20px;
-    }
-    .logo {
-      width: 175px;
-      height: 175px;
-      padding-top: 5%;
-      padding-left: 10%;
-    }
-    .small-text {
-      margin-top: .5px;
-    }
-    body {
-      background-color: violet;
-    }
+@media (min-width: 1200px) {
+  body {
+    background-color: lightpink;
   }
-
-  @media (min-width: 992px) {
-    body {
-      background-color: lightseagreen;
-    }
-    h1 {
-      color: darkslateblue;
-      border-bottom: 2px solid darkblue;
-    }
-    h2 {
-      color: lightblue;
-    }
-    main {
-      height: 480px;
-    }
-    #profile-pic {
-      width: 325px;
-      height: 325px;
-    }
-    .logo {
-      padding-top: 0px; 
-      padding-left: 1px;
-      width: 175px;
-      height: 175px;
-    }
-    nav {
-      margin: 0;
-      padding-left: 20px;
-      display: flex;
-      justify-content: center;
-      list-style: none;
-    }
-    nav > a {
-      font-size: 19px;
-      box-sizing: border-box;
-    }
-    button {
-      background:lightblue;
-      font-family: 'Courier New', Courier, monospace;
-      letter-spacing: 14px;
-      font-size: 22px;
-      padding: 20px;
-      padding-bottom: 10%;
-      margin-bottom: 1%;
-      color:black;
-    }
+  .logo {
+    padding-top: 0px;
+    width: 200px;
+    height: 200px;
   }
-  
-  @media (min-width: 1200px) {
-    body {
-      background-color: lightpink;
-    }
-    .logo {
-      padding-top: 0px;
-      width: 200px;
-      height: 200px;
-    }
-    h1 {
-      color: red;
-      border-bottom: 2px solid darkred;
-      font-size: 32px;
-    }
-    h2 {
-      color: orangered;
-      font-size: 25px;
-    }
-    #profile-pic {
-      padding-top: 0px;
-      width: 350px;
-      height: 350px;
-    }
-    button {
-      background:coral;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      letter-spacing: 14px;
-      font-size: 24px;
-      padding: 15px;
-      padding-bottom: 10%;
-      margin-bottom: 1%;
-      color:black;
-    }
-    nav > a {
-      font-size: 20px;
-    }
+  h1 {
+    color: red;
+    border-bottom: 2px solid darkred;
+    font-size: 32px;
   }
+  h2 {
+    color: orangered;
+    font-size: 25px;
+  }
+  #profile-pic {
+    padding-top: 0px;
+    width: 350px;
+    height: 350px;
+  }
+  button {
+    background: coral;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    letter-spacing: 14px;
+    font-size: 24px;
+    padding: 15px;
+    padding-bottom: 10%;
+    margin-bottom: 1%;
+    color: black;
+  }
+  nav > a {
+    font-size: 20px;
+  }
+}

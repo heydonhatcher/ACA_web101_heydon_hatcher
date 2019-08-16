@@ -1,7 +1,10 @@
+body {
+  background: white;
+}
+
 main {
   width: 60px;
   margin: auto;
-  background: white;
 }
 
 div {

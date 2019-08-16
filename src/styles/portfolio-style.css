@@ -18,9 +18,20 @@ h2 {
 body {
   background: lightgrey;
 }
+div {
+  width: 450px;
+  height: 450px;
+  display: inline-block;
+}
+
+a {
+  margin-left: 170px;
+  color: darkslategrey;
+  font-family: "Comfortaa", cursive;
+  text-decoration: none;
+}
 
 iframe {
-  display: inline-block;
   height: 400px;
   width: 400px;
   margin: 25px;

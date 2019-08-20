@@ -35,3 +35,18 @@ div {
 .para2 {
   width: 50%;
 }
+
+@media (max-width: 576px) {
+  .pigPara {
+    flex-direction: column;
+    margin-right: 30px;
+  }
+
+  .para1 {
+    width: 100%;
+  }
+
+  .para2 {
+    width: 100%;
+  }
+}

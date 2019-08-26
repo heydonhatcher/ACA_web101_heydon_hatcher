@@ -1,212 +1,202 @@
 .container {
-    display: grid;
-    height: 900px;
-    width: 1100px;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-template-rows: 15% 42.5% 42.5%;
-    grid-column-gap: 10px;
-    grid-row-gap: 15px;
-    justify-items: center;
-    align-items: center;
+  display: grid;
+  height: 900px;
+  width: 1100px;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 15% 42.5% 42.5%;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  justify-items: center;
+  align-items: center;
 }
 
 h1 {
-    font-family: Garamond, Baskerville, "Baskerville Old Face";
-    font-size: 50px;
-    padding: 10px;
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
-    justify-content: center;
-    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
-    color: white;
+  font-family: Garamond, Baskerville, "Baskerville Old Face";
+  font-size: 50px;
+  padding: 10px;
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  justify-content: center;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+  color: white;
 }
 
 .date {
-    font-family: Garamond, Baskerville, "Baskerville Old Face";
-    font-size: 30px;
-    grid-column: 2 / 2;
-    grid-row: 1 / 3;
-    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
-    color: white;
-    justify-items: center;
-    align-items: center;
+  font-family: Garamond, Baskerville, "Baskerville Old Face";
+  font-size: 30px;
+  grid-column: 2 / 2;
+  grid-row: 1 / 3;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+  color: white;
+  justify-items: center;
+  align-items: center;
 }
 
 .time {
-    font-size: 50px;
-    display: grid;
-    height: 63px;
-    width: 275px;
-    text-shadow:1px 1px 2px black,0 0 0.2em blue;
-    grid-template-columns: 75px;
-    grid-template-rows: 75px;
-    box-sizing: border-box;
-    border: 1px solid black;
-    background: lightslategray;
-    color: lightblue;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    padding-left: 30px;
+  font-size: 50px;
+  display: grid;
+  height: 63px;
+  width: 275px;
+  text-shadow: 1px 1px 2px black, 0 0 0.2em blue;
+  grid-template-columns: 75px;
+  grid-template-rows: 75px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  background: lightslategray;
+  color: lightblue;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  padding-left: 30px;
 }
 
 .toDo {
-    grid-column: 1 / 3;
-    grid-row: 2 / 4;
-    font-family: Georgia, serif;
-    color: white;
-    text-shadow: blueviolet 1px 0 10px;
-    font-size: 25px;
-}
-
-.items {
-    display: grid;
-    height: 50px;
-    width: 475px;
-    border-bottom: 3px solid black;
-    box-sizing: border-box;
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;
+  font-family: Georgia, serif;
+  color: white;
+  text-shadow: blueviolet 1px 0 10px;
+  font-size: 25px;
 }
 
 .calculator {
-    grid-row: 2 / 4;
-    grid-column: 3;
-    width: 215px;
-    display: flex;
-    flex-flow: wrap row;
-    justify-content: center;
-    padding: 5px 5px 10px 5px;
-    border-radius: 4px; 
-    background: #9370DB;
-    margin-left: -60px;
+  grid-row: 2 / 4;
+  grid-column: 3;
+  width: 215px;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  padding: 5px 5px 10px 5px;
+  border-radius: 4px;
+  background: #9370db;
+  margin-left: -60px;
 }
 
 .calculator input {
-    background: white;
-    border: none;
-    box-shadow: none;
-    width: 80%;
-    border-bottom: 2px solid #9370DB; 
-    padding: 20px;
-    text-align: right;
-    align-items: center;
-    font-size: 30px;
+  background: white;
+  border: none;
+  box-shadow: none;
+  width: 80%;
+  border-bottom: 2px solid #9370db;
+  padding: 20px;
+  text-align: right;
+  align-items: center;
+  font-size: 30px;
 }
 
 .calc-button {
-    background: rgba(0, 0, 0, 0.5);
-    border: 1 px solid black;
-    padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1 px solid black;
+  padding: 20px;
 
-    color: white;
-    border-radius: 5px;
-    font-size: 15px;
-    width: 50px;
+  color: white;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 50px;
 }
 
-.is-clear, .is-zero {
-    width: 158px;
+.is-clear,
+.is-zero {
+  width: 158px;
 }
 
 .is-clear {
-    background: #3572D8;
+  background: #3572d8;
 }
 
 .is-equals {
-    background: #28D060;
+  background: #28d060;
 }
 
 @media (max-width: 768px) {
-    .container {
-        display: grid;
-        height: 675px;
-        width: 300px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 15% 28.3% 28.3% 28.3%;
-        grid-row-gap: 5px;
-    }
-    h1 {
-        grid-row: 1;
-        font-size: 38px;
-        padding-top: 60px;
-        padding-right: 90px;
-    }
-    .date {
-        font-size: 20px;
-    }
-    .time {
-        font-size: 40px;
-        height: 55px;
-        width: 240px;
-        padding-left: 30px;
-        margin-top: 20px;
-        margin-bottom: 40px;
-    }
-    .toDo {
-        grid-row: 2;
-        font-size: 18px;
-        margin-left: 20px;
-        padding-top: 20%;
-    }
-    .items {
-        height: 35px;
-        width: 375px;
-    }
-    .calculator {
-        grid-column: 2;
-        grid-row: 3.5;
-        margin-top: 500px;
-        margin-right: 300px;
-        align-content: center;
-    }
+  .container {
+    display: grid;
+    height: 675px;
+    width: 300px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 28.3% 28.3% 28.3%;
+    grid-row-gap: 5px;
+  }
+  h1 {
+    grid-row: 1;
+    font-size: 38px;
+    padding-top: 60px;
+    padding-right: 90px;
+  }
+  .date {
+    font-size: 20px;
+  }
+  .time {
+    font-size: 40px;
+    height: 55px;
+    width: 240px;
+    padding-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .toDo {
+    grid-row: 2;
+    font-size: 18px;
+    margin-left: 20px;
+    padding-top: 20%;
+  }
+
+  .calculator {
+    grid-column: 2;
+    grid-row: 3.5;
+    margin-top: 500px;
+    margin-right: 300px;
+    align-content: center;
+  }
 }
 
 @media (max-width: 991px) {
-    .container {
-        display: grid;
-        height: 700px;
-        width: 500px;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 15% 42.5% 42.5%;
-        grid-column-gap: 8px;
-        grid-row-gap: 10px;
-    }
-    h1 {
-        grid-row: 1;
-        font-size: 40px;
-        padding-top: 60px;
-        text-align: center;
-        padding-left: 100px;
-    }
-    .date {
-        font-size: 33px;
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-        margin-left: 250px;
-        margin-top: 20px; 
-        text-align: center;
-    }
-    .time {
-        font-size: 40px;
-        height: 55px;
-        width: 240px;
-        padding-left: 30px;
-        padding-top: 5px;
-        margin-top: 10px;
-        margin-bottom: 40px;
-    }
-    .toDo {
-        grid-row: 2.5;
-        font-size: 23px;
-        margin-left: 10px;
-        text-align: left;
-        margin-top: 175px;
-    }
-    .items {
-        height: 40px;
-        width: 425px;
-    }
-    .calculator {
-        grid-column: 2.5;
-        grid-row: 2.5;
-        margin-left: 50px;
-    }
+  .container {
+    display: grid;
+    height: 700px;
+    width: 500px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 42.5% 42.5%;
+    grid-column-gap: 8px;
+    grid-row-gap: 10px;
+  }
+  h1 {
+    grid-row: 1;
+    font-size: 40px;
+    padding-top: 60px;
+    text-align: center;
+    padding-left: 100px;
+  }
+  .date {
+    font-size: 33px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin-left: 250px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .time {
+    font-size: 40px;
+    height: 55px;
+    width: 240px;
+    padding-left: 30px;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  .toDo {
+    grid-row: 2.5;
+    font-size: 23px;
+    margin-left: 10px;
+    text-align: left;
+    margin-top: 175px;
+  }
+  .items {
+    height: 40px;
+    width: 425px;
+  }
+  .calculator {
+    grid-column: 2.5;
+    grid-row: 2.5;
+    margin-left: 50px;
+  }
 }

@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/dashboard-style.css">
-    <script type="text/javascript" src="../jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="./scripts/dashboard.js"></script>
     <title>Document</title>
 </head>
 <div class="container">
     <body background="./images/sky2.jpg">
         <h1>Welcome to the internet, Andrew!</h1>
+        <div class="myLoc">   
+            <button class="generateLoc" onclick="getLocation()">Get Location!</button>
+                <p id="my-coordinates"></p>
+        </div> 
         <div class="date">It's Tuesday, July 24rd
             <a class="time">12:34PM</a>
         </div>
@@ -51,6 +53,8 @@
                 <input type="submit" id="add" value="add" />
             </form>
         </div>
+        <script type="text/javascript" src="../jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="./scripts/dashboard.js"></script>
     </body>
 </div>
 </html>
